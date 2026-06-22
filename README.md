@@ -3,7 +3,7 @@
 [![Poset Research Pipeline CI](https://github.com)](https://github.com)
 [![Python Version](https://shields.io)](https://python.org)
 
-A high-performance computational framework designed to automate the generation, tracking, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. Optimized for top-tier theoretical computer science and combinatorics journal protocols.
+A high-performance computational framework designed to automate the generation, tracking, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. 
 
 ---
 
