@@ -1,8 +1,8 @@
 import time
 import numpy as np
 from joblib import Parallel, delayed
-from poset_operad import PosetOperad
-from poset_processor import PosetProcessor
+from src.poset_operad import PosetOperad
+from src.poset_processor import PosetProcessor
 import csv
 
 

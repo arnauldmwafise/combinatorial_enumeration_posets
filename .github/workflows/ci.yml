@@ -25,13 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install numpy networkx joblib matplotlib pytest
 
-    - name: Execute Poset Operad Composition Model Tests
+    - name: Execute Complete Test Engine Suite
       run: |
-        python -m pytest -v test_poset_operad.py
-
-    - name: Execute Order Classification workbench Tests
-      run: |
-        python -m pytest -v test_poset_processor.py
+        python -m pytest -v tests/
 
     - name: Run Global Theorem Enumerate Logger Check
       run: |

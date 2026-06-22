@@ -1,7 +1,9 @@
 import time
 import json
 import numpy as np
-from poset_operad import PosetOperad
+from src.poset_operad import PosetOperad
+from src.poset_processor import PosetProcessor
+
 
 def generate_random_lower_triangular(dim: int) -> np.ndarray:
     """Generates a valid random lower triangular poset matrix with an active diagonal."""
