@@ -2,8 +2,9 @@
 
 [![Poset Research Pipeline CI](https://github.com)](https://github.com)
 [![Python Version](https://shields.io)](https://python.org)
+[![License: MIT](https://shields.io)](LICENSE)
 
-A high-performance computational framework designed to automate the generation, tracking, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. 
+A high-performance computational framework designed to automate the generation, tracking, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. Optimized for top-tier theoretical computer science and combinatorics journal protocols.
 
 ---
 
@@ -18,9 +19,14 @@ my_research_project/
 ├── docs/                          # Publication assets, manuals, and latency line plots
 ├── notebooks/                     # Exploratory research and derivation notebooks
 ├── src/                           # Core operational algorithms engine modules
+│   ├── __init__.py
 │   ├── poset_operad.py            # High-performance, bitpacked algebraic composition matrix engine
 │   └── poset_processor.py         # Structural filter classifying dualizable properties
 ├── tests/                         # Complete 25-case unit testing engine suite
+│   ├── __init__.py
+│   ├── test_growth_workbench.py   # Threading and scale validation loops
+│   ├── test_poset_operad.py       # Composition model verification tests
+│   └── test_poset_processor.py    # Classification and Hasse diagram checks
 ├── benchmark_poset.py             # Throughput latency tracking entrypoint
 ├── plot_benchmark.py              # High-res line plot rendering pipeline
 ├── pyproject.toml                 # Root path directory mapping declarations
@@ -36,7 +42,7 @@ This workspace bridges algebraic topology and order theory by formalizing the **
 
 ### Asymptotic Performance Boundaries
 * **Bitmask Serialization**: Maps relation blocks $\mathcal{M}_{n \times n}(\mathbb{F}_2) \longleftrightarrow \mathbb{Z}_{2^{n^2}}$ in $\mathcal{O}(n^2)$ time via arbitrary-precision vectorized masks.
-* **Property ClassificationWorkbench**: Validates connectivity, self-duality mapping, and complex bilateral **Double-Dualizability** constraints within strict structural complexity limits of $\mathcal{O}(n^3)$ utilizing NetworkX undirected graphs.
+* **Property Classification Workbench**: Validates connectivity, self-duality mapping, and complex bilateral **Double-Dualizability** constraints within strict structural complexity limits of $\mathcal{O}(n^3)$ utilizing NetworkX undirected graphs.
 * **Transitive Reduction Mapping**: Isolates immediate covering relations to automatically project clean topological **Hasse Diagrams** in $\mathcal{O}(n^3)$ time complexity boundaries.
 
 ---
@@ -69,3 +75,29 @@ python benchmark_poset.py
 python plot_benchmark.py
 ```
 *Outputs are written directly to `docs/poset_scaling_analysis.png`.*
+
+---
+
+## 4. Citation Format
+
+If you utilize this computational framework or its underlying operadic partition algorithms in your academic research, please cite the repository software package as follows:
+
+### BibTeX Format
+```bibtex
+@software{mwafise2026posets,
+  author       = {Mwafise, Arnauld},
+  title        = {Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub Repository},
+  howpublished \(= {\url{https://github.com}} \)}
+```
+
+### APA Format
+Mwafise, A. (2026). *Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices* [Computer software]. GitHub Repository. https://github.com
+
+---
+
+## 5. License
+
+This project is open-source software licensed under the terms of the [MIT License](LICENSE).
