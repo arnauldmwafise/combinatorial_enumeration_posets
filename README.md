@@ -44,13 +44,11 @@ The computational and combinatorial enumeration of poset matrices primarily brid
 
 This workspace formalizes the **partial operadic composition**
 
-\[
+$$
 \circ_i : \mathcal{P}(p)\times\mathcal{P}(q)\rightarrow\mathcal{P}(p+q-1)
-\]
+$$
 
-over Boolean incidence matrices stored in lower-triangular form, where
-entries satisfy \(M_{j,j}=1\) and \(M_{j,k}=1\) encodes the order relation
-\(k \preceq j\).
+over Boolean incidence matrices stored in lower-triangular form, where entries satisfy $M_{j,j}=1$ and $M_{j,k}=1$ encodes the order relation $k \preceq j$.
 
 The implementation realizes the operadic substitution mechanisms introduced in *Operads of Poset Matrices*, where a poset matrix is expanded by grafting a second poset matrix into a specified insertion position while preserving the defining poset axioms of reflexivity, antisymmetry, and transitivity through structured block-matrix constructions. The framework supports several operadic composition variants, including unrestricted, minimal-boundary, maximal-boundary, and symmetric boundary-restricted propagations, providing constructive generators for broad classes of finite posets.
 
