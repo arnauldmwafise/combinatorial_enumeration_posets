@@ -38,8 +38,31 @@ my_research_project/
 
 ## 2. Mathematical Context & Complexity Specifications
 
-This workspace bridges algebraic topology and order theory by formalizing the **partial operadic composition** $\circ_i: \mathcal{P}(p) \times \mathcal{P}(q) \rightarrow \mathcal{P}(p+q-1)$ over boolean matrices sitting in a lower-triangular format ($M_{j,k} = 1 \iff j \ge k$).
+## Overview
 
+The computational and combinatorial enumeration of poset matrices primarily bridges algebraic combinatorics, order theory, and theoretical computer science. By representing partially ordered sets (posets) as Boolean matrices, this interdisciplinary area translates abstract ordering relations into quantitative, graph-theoretic, and algorithmic structures. The resulting framework enables the study of combinatorial enumeration, structural properties of posets, and computational methods for analyzing ordered systems.
+
+This workspace formalizes the **partial operadic composition**
+
+\[
+\circ_i : \mathcal{P}(p)\times\mathcal{P}(q)\rightarrow\mathcal{P}(p+q-1)
+\]
+
+over Boolean incidence matrices stored in lower-triangular form, where
+entries satisfy \(M_{j,j}=1\) and \(M_{j,k}=1\) encodes the order relation
+\(k \preceq j\).
+
+The implementation realizes the operadic substitution mechanisms introduced in *Operads of Poset Matrices*, where a poset matrix is expanded by grafting a second poset matrix into a specified insertion position while preserving the defining poset axioms of reflexivity, antisymmetry, and transitivity through structured block-matrix constructions. The framework supports several operadic composition variants, including unrestricted, minimal-boundary, maximal-boundary, and symmetric boundary-restricted propagations, providing constructive generators for broad classes of finite posets.
+
+In addition, the codebase implements high-performance enumeration pipelines based on compact bit-packed matrix encodings, canonical hashing schemes, and parallelized generation algorithms. These techniques enable large-scale computational experiments on operad-generated poset families and facilitate comparisons with classical combinatorial sequences, including the large Schröder, super-Catalan, and Fibonacci families. The resulting environment serves both as a computational laboratory for poset operad-theoretic investigations and as a verification platform for structural classifications involving connectivity, duality invariants, interval decompositions, and series-parallel constructions.
+
+## References
+
+1. **Operads of Poset Matrices**
+   - DOI: https://doi.org/10.37236/14396
+
+2. **Computational and Combinatorial Enumeration of Poset Matrices**
+   - https://www.researchgate.net/publication/385137523_Computational_and_Combinatorial_Enumeration_of_Poset_Matrices
 ### Asymptotic Performance Boundaries
 * **Bitmask Serialization**: Maps relation blocks $\mathcal{M}_{n \times n}(\mathbb{F}_2) \longleftrightarrow \mathbb{Z}_{2^{n^2}}$ in $\mathcal{O}(n^2)$ time via arbitrary-precision vectorized masks.
 * **Property Classification Workbench**: Validates connectivity, self-duality mapping, and complex bilateral **Double-Dualizability** constraints within strict structural complexity limits of $\mathcal{O}(n^3)$ utilizing NetworkX undirected graphs.
@@ -85,16 +108,16 @@ If you utilize this computational framework or its underlying operadic partition
 ### BibTeX Format
 ```bibtex
 @software{mwafise2026posets,
-  author       = {Mwafise, Arnauld},
+  author       = {Mesinga Mwafise, Arnauld},
   title        = {Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
-  howpublished \(= {\url{https://github.com}} \)}
+  howpublished \(= {\url{https://github.com/arnauldmwafise/combinatorial_enumeration_posets}} \)}
 ```
 
 ### APA Format
-Mwafise, A. (2026). *Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices* [Computer software]. GitHub Repository. https://github.com
+Mesinga Mwafise, A. (2026). *Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices* [Computer software]. GitHub Repository. https://github.com
 
 ---
 
