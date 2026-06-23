@@ -107,7 +107,7 @@ If you utilize this computational framework or its underlying operadic partition
 ```bibtex
 @software{mwafise2026posets,
   author       = {Mesinga Mwafise, Arnauld},
-  title        = {Combinatorial Enumeration of Finite Lower-Triangular Poset Matrices},
+  title        = {Combinatorial Enumeration of Finite Poset Matrices},
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
