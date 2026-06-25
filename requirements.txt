@@ -3,3 +3,4 @@ networkx
 joblib
 matplotlib
 pytest
+# For GPU Clusters: Install cupy, cugraph, and cudf via RAPIDS conda environments
