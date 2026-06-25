@@ -4,7 +4,7 @@
 [![Python Version](https://shields.io)](https://python.org)
 [![License: MIT](https://shields.io)](LICENSE)
 
-A high-performance computational framework designed to automate the generation, tracking, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. 
+A high-performance computational framework designed to automate the generation, enumeration, and algebraic classification of finite partially ordered sets (posets) under operadic compositions. 
 
 ---
 
